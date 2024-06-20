@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "698124157322",
+    "project_id": "mychatapp-13a32",
+    "storage_bucket": "mychatapp-13a32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698124157322:android:536012b6da3022d3ee4873",
+        "android_client_info": {
+          "package_name": "com.craig.mychatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_TT0bB6MjFB9A76-w91_zqetG-f3EG2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Chat App</string>
+    <string name="my_chat_app">My Chat App</string>
+    <string name="registration">Registration</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signin">SIGN IN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="lock_icon">Lock Icon</string>
+    <string name="reset">Reset</string>
+</resources>
