@@ -10,5 +10,10 @@
     <string name="username">Username</string>
     <string name="register">Register</string>
     <string name="lock_icon">Lock Icon</string>
-    <string name="reset">Reset</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_sign_out">Sign Out</string>
+    <string name="update_profile">UPDATE PROFILE</string>
+    <string name="click_to_update_profile">Click Photo To Update Profile</string>
+    <string name="profile_update">Profile Update</string>
+
 </resources>
