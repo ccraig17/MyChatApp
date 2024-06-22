@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MyLoginActivity extends AppCompatActivity {
 
@@ -18,6 +19,18 @@ public class MyLoginActivity extends AppCompatActivity {
     private Button btnSignIn, btnSignUp;
 
     FirebaseAuth auth;
+    FirebaseUser firebaseUser;
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        if(firebaseUser != null){
+            Intent intent = new Intent(MyLoginActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +44,7 @@ public class MyLoginActivity extends AppCompatActivity {
         btnSignUp = findViewById(R.id.buttonSignUp);
 
         auth = FirebaseAuth.getInstance();
+
 
         btnSignIn.setOnClickListener((v -> {
             String email = editTextEmail.getText().toString();

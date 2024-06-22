@@ -98,13 +98,13 @@ public class SignUpActivity extends AppCompatActivity {
                                             reference.child("Users").child(auth.getUid()).child("image").setValue(filePath).addOnSuccessListener(new OnSuccessListener<Void>() {
                                                 @Override
                                                 public void onSuccess(Void unused) {
-                                                    Log.d("SignUpActivity", "Image URL written to database successfully");
+                                                   // Log.d("SignUpActivity", "Image URL written to database successfully");
                                                     Toast.makeText(SignUpActivity.this, "Write to database is successful.", Toast.LENGTH_SHORT).show(); // NO Toast message appeared.....hmmmm
                                                 }
                                             }).addOnFailureListener(new OnFailureListener() {
                                                 @Override
                                                 public void onFailure(@NonNull Exception e) {
-                                                    Log.e("SignUpActivity", "Error writing image URL to database", e);
+                                                   // Log.e("SignUpActivity", "Error writing image URL to database", e);
                                                     Toast.makeText(SignUpActivity.this, "Write to database was NOT successful.", Toast.LENGTH_SHORT).show();
 
                                                 }
@@ -121,7 +121,7 @@ public class SignUpActivity extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                     }else{
-                        Toast.makeText(SignUpActivity.this, "Error creating your account! " , Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignUpActivity.this, "This email address is already in use by another account " , Toast.LENGTH_SHORT).show();
                     }
             });
 
