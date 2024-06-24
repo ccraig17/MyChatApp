@@ -63,6 +63,8 @@ public class SignUpActivity extends AppCompatActivity {
         firebaseStorage = FirebaseStorage.getInstance();
         storageReference = firebaseStorage.getReference();
 
+
+
         registerActivityForSelectImage();
 
         imageViewCircle.setOnClickListener((v -> {

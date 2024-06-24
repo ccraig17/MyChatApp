@@ -15,5 +15,6 @@
     <string name="update_profile">UPDATE PROFILE</string>
     <string name="click_to_update_profile">Click Photo To Update Profile</string>
     <string name="profile_update">Profile Update</string>
+    <string name="reset">Reset</string>
 
 </resources>
